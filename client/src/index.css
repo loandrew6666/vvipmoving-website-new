@@ -1,0 +1,285 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  /* VVIP Moving 品牌棕金色 */
+  --color-brand: var(--brand);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-light: var(--brand-light);
+}
+
+:root {
+  /* ===== VVIP Moving 高端棕金配色系統 =====
+   *
+   * 設計理念：溫潤金棕，精緻高端
+   * Primary（主色）  : #C8973A — 深金色，用於按鈕、強調、品牌元素
+   * Brand Dark       : #A67A28 — 深棕金，hover 狀態
+   * Brand Light      : #E8C97A — 淺金，輔助強調
+   * Background       : #FDFAF5 — 象牙白，主背景
+   * Card             : #FFFFFF — 純白，卡片背景
+   * Foreground       : #2C1F0E — 深棕，主文字
+   * Muted Foreground : #7A6348 — 中棕，次要文字
+   * Border           : #E2D0B0 — 柔和金棕邊框
+   * Secondary BG     : #F5EDD8 — 淺暖米，次要背景/標籤
+   */
+
+  /* 主色：深金色 */
+  --primary: oklch(0.67 0.12 68);          /* #C8973A 深金色 */
+  --primary-foreground: oklch(1 0 0);       /* 白色文字 */
+
+  /* 背景系統 */
+  --background: oklch(0.985 0.008 80);      /* #FDFAF5 象牙白 */
+  --foreground: oklch(0.20 0.04 55);        /* #2C1F0E 深棕主文字 */
+
+  /* 卡片 */
+  --card: oklch(1 0 0);                     /* 純白 */
+  --card-foreground: oklch(0.20 0.04 55);   /* 深棕 */
+
+  /* Popover */
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.20 0.04 55);
+
+  /* 次要色：淺暖米 */
+  --secondary: oklch(0.94 0.03 80);         /* #F5EDD8 淺暖米 */
+  --secondary-foreground: oklch(0.30 0.05 55); /* 深棕 */
+
+  /* 靜音色 */
+  --muted: oklch(0.96 0.015 80);            /* 極淺暖米 */
+  --muted-foreground: oklch(0.50 0.05 60);  /* #7A6348 中棕 */
+
+  /* 強調色 */
+  --accent: oklch(0.94 0.03 80);
+  --accent-foreground: oklch(0.30 0.05 55);
+
+  /* 危險色 */
+  --destructive: oklch(0.58 0.22 27);
+  --destructive-foreground: oklch(0.985 0 0);
+
+  /* 邊框與輸入 */
+  --border: oklch(0.87 0.04 75);            /* #E2D0B0 柔和金棕邊框 */
+  --input: oklch(0.87 0.04 75);
+  --ring: oklch(0.67 0.12 68);              /* 深金色 focus ring */
+
+  /* 品牌色（用於 bg-brand, text-brand 等） */
+  --brand: oklch(0.67 0.12 68);             /* 深金色 #C8973A */
+  --brand-dark: oklch(0.57 0.12 68);        /* 深棕金 #A67A28 */
+  --brand-light: oklch(0.82 0.09 75);       /* 淺金 #E8C97A */
+
+  /* 圖表色 */
+  --chart-1: oklch(0.67 0.12 68);           /* 深金 */
+  --chart-2: oklch(0.75 0.10 80);           /* 淺金 */
+  --chart-3: oklch(0.55 0.08 200);          /* 青藍 */
+  --chart-4: oklch(0.65 0.10 150);          /* 綠 */
+  --chart-5: oklch(0.60 0.15 320);          /* 紫 */
+
+  /* 圓角 */
+  --radius: 0.65rem;
+
+  /* Sidebar */
+  --sidebar: oklch(0.97 0.01 80);
+  --sidebar-foreground: oklch(0.20 0.04 55);
+  --sidebar-primary: oklch(0.67 0.12 68);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.94 0.03 80);
+  --sidebar-accent-foreground: oklch(0.30 0.05 55);
+  --sidebar-border: oklch(0.87 0.04 75);
+  --sidebar-ring: oklch(0.67 0.12 68);
+}
+
+/* 強制只使用淺色主題，不跟隨系統深色模式 */
+.dark {
+  --primary: oklch(0.67 0.12 68);
+  --primary-foreground: oklch(1 0 0);
+  --background: oklch(0.985 0.008 80);
+  --foreground: oklch(0.20 0.04 55);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.20 0.04 55);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.20 0.04 55);
+  --secondary: oklch(0.94 0.03 80);
+  --secondary-foreground: oklch(0.30 0.05 55);
+  --muted: oklch(0.96 0.015 80);
+  --muted-foreground: oklch(0.50 0.05 60);
+  --accent: oklch(0.94 0.03 80);
+  --accent-foreground: oklch(0.30 0.05 55);
+  --destructive: oklch(0.58 0.22 27);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.87 0.04 75);
+  --input: oklch(0.87 0.04 75);
+  --ring: oklch(0.67 0.12 68);
+  --brand: oklch(0.67 0.12 68);
+  --brand-dark: oklch(0.57 0.12 68);
+  --brand-light: oklch(0.82 0.09 75);
+  --chart-1: oklch(0.67 0.12 68);
+  --chart-2: oklch(0.75 0.10 80);
+  --chart-3: oklch(0.55 0.08 200);
+  --chart-4: oklch(0.65 0.10 150);
+  --chart-5: oklch(0.60 0.15 320);
+  --sidebar: oklch(0.97 0.01 80);
+  --sidebar-foreground: oklch(0.20 0.04 55);
+  --sidebar-primary: oklch(0.67 0.12 68);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.94 0.03 80);
+  --sidebar-accent-foreground: oklch(0.30 0.05 55);
+  --sidebar-border: oklch(0.87 0.04 75);
+  --sidebar-ring: oklch(0.67 0.12 68);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Noto Sans TC", "Noto Sans", sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Noto Sans TC", "Noto Sans", sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  /**
+   * Custom container utility that centers content and adds responsive padding.
+   */
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 1280px;
+    }
+  }
+}
+
+/* ===== Hero 紋理 SVG 背景 ===== */
+.hero-texture {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M30 0 L60 30 L30 60 L0 30 Z' fill='none' stroke='%23C8973A' stroke-width='0.4' stroke-opacity='0.12'/%3E%3C/svg%3E");
+  background-size: 60px 60px;
+}
+
+/* ===== VVIP 金色光暈 CTA 按鈕動畫 ===== */
+@keyframes gold-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 oklch(0.67 0.12 68 / 0.4),
+                0 4px 20px oklch(0.67 0.12 68 / 0.25);
+  }
+  50% {
+    box-shadow: 0 0 0 8px oklch(0.67 0.12 68 / 0),
+                0 8px 30px oklch(0.67 0.12 68 / 0.45);
+  }
+}
+
+@keyframes gold-shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.btn-gold-glow {
+  animation: gold-pulse 2.5s ease-in-out infinite;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-gold-glow:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 32px oklch(0.67 0.12 68 / 0.55),
+              0 2px 8px oklch(0.67 0.12 68 / 0.3);
+  animation: none;
+}
+
+.btn-gold-glow:active {
+  transform: translateY(0) scale(0.99);
+}
+
+/* 次要金色按鈕（outline 風格） */
+.btn-gold-outline {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-gold-outline:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px oklch(0.67 0.12 68 / 0.3);
+}
+
+/* QA 浮動按鈕位置 - 與右側按鈕對齊 */
+.qa-fab-position {
+  bottom: 4.5rem; /* 手機版：與右側 AI 估價按鈕同高 */
+}
+@media (min-width: 768px) {
+  .qa-fab-position {
+    bottom: 1.5rem; /* 桌面版：與右側按鈕組底部對齊 */
+  }
+}

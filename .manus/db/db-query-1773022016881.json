@@ -1,0 +1,28 @@
+{
+  "query": "SELECT id, name, email, role FROM users ORDER BY id DESC;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2p9oApjZCTPcMQH.283171aebfbb --database UpdR9BzkEvi6rSYbxgmsWm --execute SELECT id, name, email, role FROM users ORDER BY id DESC;",
+  "rows": [
+    {
+      "id": "1110058",
+      "name": "科技 機童",
+      "email": "jitongyewuji@gmail.com",
+      "role": "user"
+    },
+    {
+      "id": "540001",
+      "name": "pual22",
+      "email": "pual22@yahoo.com.tw",
+      "role": "user"
+    },
+    {
+      "id": "1",
+      "name": "敦允 羅",
+      "email": "loandrew6666@gmail.com",
+      "role": "admin"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\temail\trole\n1110058\t科技 機童\tjitongyewuji@gmail.com\tuser\n540001\tpual22\tpual22@yahoo.com.tw\tuser\n1\t敦允 羅\tloandrew6666@gmail.com\tadmin\n",
+  "stderr": "",
+  "execution_time_ms": 1608
+}

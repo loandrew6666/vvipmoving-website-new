@@ -1,0 +1,180 @@
+{
+  "query": "SELECT id, category, LEFT(question, 50) as q FROM faqs WHERE category IN ('packing', 'truck', 'cleaning', 'storage', 'organizing', 'service') ORDER BY category, id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2p9oApjZCTPcMQH.283171aebfbb --database UpdR9BzkEvi6rSYbxgmsWm --execute SELECT id, category, LEFT(question, 50) as q FROM faqs WHERE category IN ('packing', 'truck', 'cleaning', 'storage', 'organizing', 'service') ORDER BY category, id;",
+  "rows": [
+    {
+      "id": "7",
+      "category": "cleaning",
+      "q": "清潔的計費方式(計人計時)"
+    },
+    {
+      "id": "39",
+      "category": "cleaning",
+      "q": "是否提供家具或家電的清潔服務？"
+    },
+    {
+      "id": "40",
+      "category": "cleaning",
+      "q": "你們會進行搬家前後清掃嗎?具體流程是什麼?"
+    },
+    {
+      "id": "13",
+      "category": "organizing",
+      "q": "歸位服務包含什麼？"
+    },
+    {
+      "id": "18",
+      "category": "organizing",
+      "q": "新的搬家結果後，如果我對歸位或擺放有不滿意，可以調整嗎？"
+    },
+    {
+      "id": "30",
+      "category": "organizing",
+      "q": "新家還沒全部整理好，我能不能先住進去？"
+    },
+    {
+      "id": "49",
+      "category": "organizing",
+      "q": "歸位服務是否包含掛畫、安裝燈具、窗簾？"
+    },
+    {
+      "id": "86",
+      "category": "organizing",
+      "q": "可以單純斷捨離嗎？"
+    },
+    {
+      "id": "87",
+      "category": "organizing",
+      "q": "請問整理師是女性嗎？"
+    },
+    {
+      "id": "1",
+      "category": "packing",
+      "q": "創勝搬家／創勝包裝的完整服務有哪些？"
+    },
+    {
+      "id": "15",
+      "category": "packing",
+      "q": "垃圾清運／包材廢棄物怎麼處理？"
+    },
+    {
+      "id": "17",
+      "category": "packing",
+      "q": "是否可只搬運，不打包、不歸位？"
+    },
+    {
+      "id": "33",
+      "category": "packing",
+      "q": "是否能參觀／看搬家團隊的包材或施工方式？"
+    },
+    {
+      "id": "34",
+      "category": "packing",
+      "q": "環保/二手/一次性包材有差別嗎？"
+    },
+    {
+      "id": "37",
+      "category": "packing",
+      "q": "包材的部分是都怎麼打包?"
+    },
+    {
+      "id": "50",
+      "category": "packing",
+      "q": "搬家的所有流程是什?(打包+搬運+歸位的部分)"
+    },
+    {
+      "id": "56",
+      "category": "packing",
+      "q": "倉儲服務會幫我打包+搬運,那我出倉的時候搬運費還要再收一次是嘛?(總共兩次搬運費)"
+    },
+    {
+      "id": "75",
+      "category": "packing",
+      "q": "可以跟你們買包材嗎?"
+    },
+    {
+      "id": "12",
+      "category": "service",
+      "q": "搬家當天我需準備什麼？"
+    },
+    {
+      "id": "27",
+      "category": "service",
+      "q": "搬家日當天大概要花多少時間？會打擾到我的生活嗎？"
+    },
+    {
+      "id": "65",
+      "category": "service",
+      "q": "要搬到國外，走國際搬家，請問有服務嗎?"
+    },
+    {
+      "id": "82",
+      "category": "service",
+      "q": "搬遷當天只有一個人"
+    },
+    {
+      "id": "88",
+      "category": "service",
+      "q": "時間是現場作業完才算嗎？"
+    },
+    {
+      "id": "95",
+      "category": "service",
+      "q": "(林口龜山以北)搬家服務預計什麼時候開始作業?"
+    },
+    {
+      "id": "96",
+      "category": "service",
+      "q": "(林口龜山以南)搬家服務預計什麼時候開始作業?"
+    },
+    {
+      "id": "97",
+      "category": "service",
+      "q": "(台中)搬家服務預計什麼時候開始作業?"
+    },
+    {
+      "id": "98",
+      "category": "service",
+      "q": "搬家服務從什麼時候開始計時計費"
+    },
+    {
+      "id": "25",
+      "category": "storage",
+      "q": "是否有倉儲服務？"
+    },
+    {
+      "id": "59",
+      "category": "storage",
+      "q": "你們的倉儲地址/倉儲地點哪裡?"
+    },
+    {
+      "id": "77",
+      "category": "storage",
+      "q": "倉儲費是月結嗎?什麼後結算?"
+    },
+    {
+      "id": "41",
+      "category": "truck",
+      "q": "為什麼這次是用工時計算?上次是用車趟。"
+    },
+    {
+      "id": "64",
+      "category": "truck",
+      "q": "貨車高度多少/多高呢?"
+    },
+    {
+      "id": "84",
+      "category": "truck",
+      "q": "可以跟車嗎?"
+    },
+    {
+      "id": "89",
+      "category": "truck",
+      "q": "請問一車大概需要多少材料？"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcategory\tq\n7\tcleaning\t清潔的計費方式(計人計時)\n39\tcleaning\t是否提供家具或家電的清潔服務？\n40\tcleaning\t你們會進行搬家前後清掃嗎?具體流程是什麼?\n13\torganizing\t歸位服務包含什麼？\n18\torganizing\t新的搬家結果後，如果我對歸位或擺放有不滿意，可以調整嗎？\n30\torganizing\t新家還沒全部整理好，我能不能先住進去？\n49\torganizing\t歸位服務是否包含掛畫、安裝燈具、窗簾？\n86\torganizing\t可以單純斷捨離嗎？\n87\torganizing\t請問整理師是女性嗎？\n1\tpacking\t創勝搬家／創勝包裝的完整服務有哪些？\n15\tpacking\t垃圾清運／包材廢棄物怎麼處理？\n17\tpacking\t是否可只搬運，不打包、不歸位？\n33\tpacking\t是否能參觀／看搬家團隊的包材或施工方式？\n34\tpacking\t環保/二手/一次性包材有差別嗎？\n37\tpacking\t包材的部分是都怎麼打包?\n50\tpacking\t搬家的所有流程是什?(打包+搬運+歸位的部分)\n56\tpacking\t倉儲服務會幫我打包+搬運,那我出倉的時候搬運費還要再收一次是嘛?(總共兩次搬運費)\n75\tpacking\t可以跟你們買包材嗎?\n12\tservice\t搬家當天我需準備什麼？\n27\tservice\t搬家日當天大概要花多少時間？會打擾到我的生活嗎？\n65\tservice\t要搬到國外，走國際搬家，請問有服務嗎?\n82\tservice\t搬遷當天只有一個人\n88\tservice\t時間是現場作業完才算嗎？\n95\tservice\t(林口龜山以北)搬家服務預計什麼時候開始作業?\n96\tservice\t(林口龜山以南)搬家服務預計什麼時候開始作業?\n97\tservice\t(台中)搬家服務預計什麼時候開始作業?\n98\tservice\t搬家服務從什麼時候開始計時計費\n25\tstorage\t是否有倉儲服務？\n59\tstorage\t你們的倉儲地址/倉儲地點哪裡?\n77\tstorage\t倉儲費是月結嗎?什麼後結算?\n41\ttruck\t為什麼這次是用工時計算?上次是用車趟。\n64\ttruck\t貨車高度多少/多高呢?\n84\ttruck\t可以跟車嗎?\n89\ttruck\t請問一車大概需要多少材料？\n",
+  "stderr": "",
+  "execution_time_ms": 1609
+}

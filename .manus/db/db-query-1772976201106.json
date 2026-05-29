@@ -1,0 +1,78 @@
+{
+  "query": "SELECT column_name, data_type, is_nullable FROM information_schema.columns WHERE table_name = 'cases' ORDER BY ordinal_position; SELECT COUNT(*) as total_cases FROM cases;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2p9oApjZCTPcMQH.283171aebfbb --database UpdR9BzkEvi6rSYbxgmsWm --execute SELECT column_name, data_type, is_nullable FROM information_schema.columns WHERE table_name = 'cases' ORDER BY ordinal_position; SELECT COUNT(*) as total_cases FROM cases;",
+  "rows": [
+    {
+      "column_name": "id",
+      "data_type": "int",
+      "is_nullable": "NO"
+    },
+    {
+      "column_name": "title",
+      "data_type": "varchar",
+      "is_nullable": "NO"
+    },
+    {
+      "column_name": "category",
+      "data_type": "varchar",
+      "is_nullable": "YES"
+    },
+    {
+      "column_name": "challenge",
+      "data_type": "text",
+      "is_nullable": "NO"
+    },
+    {
+      "column_name": "solution",
+      "data_type": "text",
+      "is_nullable": "NO"
+    },
+    {
+      "column_name": "result",
+      "data_type": "text",
+      "is_nullable": "NO"
+    },
+    {
+      "column_name": "feedback",
+      "data_type": "text",
+      "is_nullable": "YES"
+    },
+    {
+      "column_name": "photoUrls",
+      "data_type": "json",
+      "is_nullable": "YES"
+    },
+    {
+      "column_name": "coverPhoto",
+      "data_type": "text",
+      "is_nullable": "YES"
+    },
+    {
+      "column_name": "region",
+      "data_type": "enum",
+      "is_nullable": "YES"
+    },
+    {
+      "column_name": "isPublished",
+      "data_type": "tinyint",
+      "is_nullable": "YES"
+    },
+    {
+      "column_name": "sortOrder",
+      "data_type": "int",
+      "is_nullable": "YES"
+    },
+    {
+      "column_name": "createdAt",
+      "data_type": "timestamp",
+      "is_nullable": "NO"
+    }
+  ],
+  "messages": [
+    "total_cases",
+    "0"
+  ],
+  "stdout": "column_name\tdata_type\tis_nullable\nid\tint\tNO\ntitle\tvarchar\tNO\ncategory\tvarchar\tYES\nchallenge\ttext\tNO\nsolution\ttext\tNO\nresult\ttext\tNO\nfeedback\ttext\tYES\nphotoUrls\tjson\tYES\ncoverPhoto\ttext\tYES\nregion\tenum\tYES\nisPublished\ttinyint\tYES\nsortOrder\tint\tYES\ncreatedAt\ttimestamp\tNO\ntotal_cases\n0\n",
+  "stderr": "",
+  "execution_time_ms": 1873
+}
