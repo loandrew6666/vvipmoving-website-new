@@ -1,0 +1,46 @@
+{
+  "query": "SELECT id, LEFT(question, 80) as question FROM faqs WHERE category = 'packing' ORDER BY id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2p9oApjZCTPcMQH.283171aebfbb --database UpdR9BzkEvi6rSYbxgmsWm --execute SELECT id, LEFT(question, 80) as question FROM faqs WHERE category = 'packing' ORDER BY id;",
+  "rows": [
+    {
+      "id": "1",
+      "question": "創勝搬家／創勝包裝的完整服務有哪些？"
+    },
+    {
+      "id": "15",
+      "question": "垃圾清運／包材廢棄物怎麼處理？"
+    },
+    {
+      "id": "17",
+      "question": "是否可只搬運，不打包、不歸位？"
+    },
+    {
+      "id": "33",
+      "question": "是否能參觀／看搬家團隊的包材或施工方式？"
+    },
+    {
+      "id": "34",
+      "question": "環保/二手/一次性包材有差別嗎？"
+    },
+    {
+      "id": "37",
+      "question": "包材的部分是都怎麼打包?"
+    },
+    {
+      "id": "50",
+      "question": "搬家的所有流程是什?(打包+搬運+歸位的部分)"
+    },
+    {
+      "id": "56",
+      "question": "倉儲服務會幫我打包+搬運,那我出倉的時候搬運費還要再收一次是嘛?(總共兩次搬運費)"
+    },
+    {
+      "id": "75",
+      "question": "可以跟你們買包材嗎?"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tquestion\n1\t創勝搬家／創勝包裝的完整服務有哪些？\n15\t垃圾清運／包材廢棄物怎麼處理？\n17\t是否可只搬運，不打包、不歸位？\n33\t是否能參觀／看搬家團隊的包材或施工方式？\n34\t環保/二手/一次性包材有差別嗎？\n37\t包材的部分是都怎麼打包?\n50\t搬家的所有流程是什?(打包+搬運+歸位的部分)\n56\t倉儲服務會幫我打包+搬運,那我出倉的時候搬運費還要再收一次是嘛?(總共兩次搬運費)\n75\t可以跟你們買包材嗎?\n",
+  "stderr": "",
+  "execution_time_ms": 1524
+}

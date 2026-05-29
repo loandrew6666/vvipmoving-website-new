@@ -1,0 +1,505 @@
+{
+  "query": "SELECT id, category, LEFT(question, 60) as q FROM faqs ORDER BY id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2p9oApjZCTPcMQH.283171aebfbb --database UpdR9BzkEvi6rSYbxgmsWm --execute SELECT id, category, LEFT(question, 60) as q FROM faqs ORDER BY id;",
+  "rows": [
+    {
+      "id": "1",
+      "category": "packing",
+      "q": "創勝搬家／創勝包裝的完整服務有哪些？"
+    },
+    {
+      "id": "2",
+      "category": "pricing",
+      "q": "估價流程怎樣？我怎麼知道要多少錢？"
+    },
+    {
+      "id": "3",
+      "category": "booking",
+      "q": "搬家／懶人搬家需要提前多久預約？"
+    },
+    {
+      "id": "4",
+      "category": "pricing",
+      "q": "服務總價是怎樣計算的？有哪些費用構成？"
+    },
+    {
+      "id": "5",
+      "category": "pricing",
+      "q": "每車單價/搬運費/打包費/歸位費是多少？"
+    },
+    {
+      "id": "6",
+      "category": "floor",
+      "q": "樓層費的部分是怎麼計算"
+    },
+    {
+      "id": "7",
+      "category": "cleaning",
+      "q": "清潔的計費方式(計人計時)"
+    },
+    {
+      "id": "8",
+      "category": "pricing",
+      "q": "包裝耗材費怎麼算？"
+    },
+    {
+      "id": "9",
+      "category": "insurance",
+      "q": "物品責任保險有嗎"
+    },
+    {
+      "id": "10",
+      "category": "pricing",
+      "q": "樓層費／樓梯／沒電梯的情況怎麼收費？"
+    },
+    {
+      "id": "11",
+      "category": "special",
+      "q": "特殊物品搬運怎樣算？"
+    },
+    {
+      "id": "12",
+      "category": "service",
+      "q": "搬家當天我需準備什麼？"
+    },
+    {
+      "id": "13",
+      "category": "organizing",
+      "q": "歸位服務包含什麼？"
+    },
+    {
+      "id": "14",
+      "category": "pricing",
+      "q": "整理師服務是什麼？收費怎麼樣？"
+    },
+    {
+      "id": "15",
+      "category": "packing",
+      "q": "垃圾清運／包材廢棄物怎麼處理？"
+    },
+    {
+      "id": "16",
+      "category": "general",
+      "q": "新家與舊家之間若距離很遠會怎樣？"
+    },
+    {
+      "id": "17",
+      "category": "packing",
+      "q": "是否可只搬運，不打包、不歸位？"
+    },
+    {
+      "id": "18",
+      "category": "organizing",
+      "q": "新的搬家結果後，如果我對歸位或擺放有不滿意，可以調整嗎？"
+    },
+    {
+      "id": "19",
+      "category": "payment",
+      "q": "付款方式有哪些？"
+    },
+    {
+      "id": "20",
+      "category": "payment",
+      "q": "信用卡可以付款嗎?"
+    },
+    {
+      "id": "21",
+      "category": "insurance",
+      "q": "搬家完成後，物品有損壞或遺失怎麼辦？"
+    },
+    {
+      "id": "22",
+      "category": "pricing",
+      "q": "行政區、偏遠地區或跨縣市的搬運有加價嗎？"
+    },
+    {
+      "id": "23",
+      "category": "pricing",
+      "q": "車輛大小／噸數怎麼算？我怎麼知道幾車？"
+    },
+    {
+      "id": "24",
+      "category": "assembly",
+      "q": "是否提供家具拆裝服務？"
+    },
+    {
+      "id": "25",
+      "category": "storage",
+      "q": "是否有倉儲服務？"
+    },
+    {
+      "id": "26",
+      "category": "special",
+      "q": "我有很多貴重藝術品／易碎品／鋼琴等要怎麼保護？"
+    },
+    {
+      "id": "27",
+      "category": "service",
+      "q": "搬家日當天大概要花多少時間？會打擾到我的生活嗎？"
+    },
+    {
+      "id": "28",
+      "category": "appliance",
+      "q": "如果家電裡有食物或冰箱要搬怎麼處理？"
+    },
+    {
+      "id": "29",
+      "category": "appliance",
+      "q": "冰箱前24小時，是拔電靜置就好，還是門要打開呢？"
+    },
+    {
+      "id": "30",
+      "category": "organizing",
+      "q": "新家還沒全部整理好，我能不能先住進去？"
+    },
+    {
+      "id": "31",
+      "category": "booking",
+      "q": "需要先付訂金嗎?如果我後來改期／取消怎麼辦？"
+    },
+    {
+      "id": "32",
+      "category": "special",
+      "q": "如果我有特殊要求／排除了標準流程怎麼辦？"
+    },
+    {
+      "id": "33",
+      "category": "packing",
+      "q": "是否能參觀／看搬家團隊的包材或施工方式？"
+    },
+    {
+      "id": "34",
+      "category": "packing",
+      "q": "環保/二手/一次性包材有差別嗎？"
+    },
+    {
+      "id": "35",
+      "category": "assembly",
+      "q": "有幫忙拆裝濾水機嗎 ?"
+    },
+    {
+      "id": "36",
+      "category": "pricing",
+      "q": "有搬運保險箱嗎?價格怎麼算?"
+    },
+    {
+      "id": "37",
+      "category": "packing",
+      "q": "包材的部分是都怎麼打包?"
+    },
+    {
+      "id": "38",
+      "category": "assembly",
+      "q": "冷氣、免治馬桶有拆裝嗎?"
+    },
+    {
+      "id": "39",
+      "category": "cleaning",
+      "q": "是否提供家具或家電的清潔服務？"
+    },
+    {
+      "id": "40",
+      "category": "cleaning",
+      "q": "你們會進行搬家前後清掃嗎?具體流程是什麼?"
+    },
+    {
+      "id": "41",
+      "category": "truck",
+      "q": "為什麼這次是用工時計算?上次是用車趟。"
+    },
+    {
+      "id": "42",
+      "category": "general",
+      "q": "新家跟舊家都需要有人在嗎?"
+    },
+    {
+      "id": "43",
+      "category": "pricing",
+      "q": "搬運途中如果路上塞車，時間或費用會受影響嗎？"
+    },
+    {
+      "id": "44",
+      "category": "general",
+      "q": "如果搬家日遇到颱風或大雨會怎麼處理？"
+    },
+    {
+      "id": "45",
+      "category": "living",
+      "q": "植物、盆栽可以一併搬運嗎？"
+    },
+    {
+      "id": "46",
+      "category": "special",
+      "q": "寵物或水族箱(魚缸)搬運可協助嗎？"
+    },
+    {
+      "id": "47",
+      "category": "general",
+      "q": "有沒有物品是你們不能搬的（例如危險品、易燃品）？"
+    },
+    {
+      "id": "48",
+      "category": "pricing",
+      "q": "包材是否可以自行提供？"
+    },
+    {
+      "id": "49",
+      "category": "organizing",
+      "q": "歸位服務是否包含掛畫、安裝燈具、窗簾？"
+    },
+    {
+      "id": "50",
+      "category": "packing",
+      "q": "搬家的所有流程是什?(打包+搬運+歸位的部分)"
+    },
+    {
+      "id": "51",
+      "category": "assembly",
+      "q": "飲水機會拆裝嗎?"
+    },
+    {
+      "id": "52",
+      "category": "pricing",
+      "q": "估價何時出來/最晚何時可以估價完成"
+    },
+    {
+      "id": "53",
+      "category": "pricing",
+      "q": "估價何時出來/最晚何時可以估價完成"
+    },
+    {
+      "id": "54",
+      "category": "general",
+      "q": "抽屜裡有東西能直接整個搬走嗎?我裡面東西可以不用拿出來吧?"
+    },
+    {
+      "id": "55",
+      "category": "pricing",
+      "q": "有機車檔車或腳踏車需要載你們也會搬嗎? 那費用又是怎麼算?"
+    },
+    {
+      "id": "56",
+      "category": "packing",
+      "q": "倉儲服務會幫我打包+搬運,那我出倉的時候搬運費還要再收一次是嘛?(總共兩次搬運費)"
+    },
+    {
+      "id": "57",
+      "category": "assembly",
+      "q": "洗衣機、烘衣機你們會協助拆裝嗎?"
+    },
+    {
+      "id": "58",
+      "category": "pricing",
+      "q": "倉儲的優惠方案((運費折$500/車))"
+    },
+    {
+      "id": "59",
+      "category": "storage",
+      "q": "你們的倉儲地址/倉儲地點哪裡?"
+    },
+    {
+      "id": "60",
+      "category": "general",
+      "q": "搬運距離50公尺以上之社區中庭 是什麼意思"
+    },
+    {
+      "id": "61",
+      "category": "payment",
+      "q": "發票會開的品項有哪些"
+    },
+    {
+      "id": "62",
+      "category": "general",
+      "q": "公司搬遷需要提供什麼資料嗎?"
+    },
+    {
+      "id": "63",
+      "category": "pricing",
+      "q": "把電視從牆上拆下來，再裝回去都要費用嗎?"
+    },
+    {
+      "id": "64",
+      "category": "truck",
+      "q": "貨車高度多少/多高呢?"
+    },
+    {
+      "id": "65",
+      "category": "service",
+      "q": "要搬到國外，走國際搬家，請問有服務嗎?"
+    },
+    {
+      "id": "66",
+      "category": "general",
+      "q": "你們會來場勘嗎?"
+    },
+    {
+      "id": "67",
+      "category": "pricing",
+      "q": "老客戶/舊客戶有優惠/打折嗎?"
+    },
+    {
+      "id": "68",
+      "category": "pricing",
+      "q": "工會有優惠嗎?"
+    },
+    {
+      "id": "69",
+      "category": "pricing",
+      "q": "北部(雙北/桃園)+南部(高雄/台南)搬遷低消"
+    },
+    {
+      "id": "70",
+      "category": "pricing",
+      "q": "北部(雙北/桃園) +南部(高雄)純整理/原地打包低消"
+    },
+    {
+      "id": "71",
+      "category": "pricing",
+      "q": "外縣市搬遷低消"
+    },
+    {
+      "id": "72",
+      "category": "pricing",
+      "q": "外縣市純整理/原地打包低消"
+    },
+    {
+      "id": "73",
+      "category": "pricing",
+      "q": "整理服務低消包含什麼?"
+    },
+    {
+      "id": "74",
+      "category": "general",
+      "q": "可以協助購買XX（如衣架）嗎？"
+    },
+    {
+      "id": "75",
+      "category": "packing",
+      "q": "可以跟你們買包材嗎?"
+    },
+    {
+      "id": "76",
+      "category": "pricing",
+      "q": "倉儲費用若不滿一個月，如何計價呢？"
+    },
+    {
+      "id": "77",
+      "category": "storage",
+      "q": "倉儲費是月結嗎?什麼後結算?"
+    },
+    {
+      "id": "78",
+      "category": "general",
+      "q": "可以幫我問一下物品在哪裡呢?找不到(找尋物品)"
+    },
+    {
+      "id": "79",
+      "category": "general",
+      "q": "有推薦其他搬家公司嗎?"
+    },
+    {
+      "id": "80",
+      "category": "booking",
+      "q": "預計執行月/日額滿想排候補"
+    },
+    {
+      "id": "81",
+      "category": "floor",
+      "q": "一天可以搬完嗎?"
+    },
+    {
+      "id": "82",
+      "category": "service",
+      "q": "搬遷當天只有一個人"
+    },
+    {
+      "id": "83",
+      "category": "general",
+      "q": "搬家前在新家先打掃 還是搬完後再打掃呢?"
+    },
+    {
+      "id": "84",
+      "category": "truck",
+      "q": "可以跟車嗎?"
+    },
+    {
+      "id": "85",
+      "category": "pricing",
+      "q": "可以現場估價嗎?"
+    },
+    {
+      "id": "86",
+      "category": "organizing",
+      "q": "可以單純斷捨離嗎？"
+    },
+    {
+      "id": "87",
+      "category": "organizing",
+      "q": "請問整理師是女性嗎？"
+    },
+    {
+      "id": "88",
+      "category": "service",
+      "q": "時間是現場作業完才算嗎？"
+    },
+    {
+      "id": "89",
+      "category": "truck",
+      "q": "請問一車大概需要多少材料？"
+    },
+    {
+      "id": "90",
+      "category": "pricing",
+      "q": "假日費用會增加嗎？"
+    },
+    {
+      "id": "91",
+      "category": "payment",
+      "q": "會開發票或收據給我嗎？"
+    },
+    {
+      "id": "92",
+      "category": "booking",
+      "q": "如何確定我有預約成功?"
+    },
+    {
+      "id": "93",
+      "category": "floor",
+      "q": "樓層費如何計算？"
+    },
+    {
+      "id": "94",
+      "category": "pricing",
+      "q": "我搬家的話(打包+搬運+歸位)"
+    },
+    {
+      "id": "95",
+      "category": "service",
+      "q": "(林口龜山以北)搬家服務預計什麼時候開始作業?"
+    },
+    {
+      "id": "96",
+      "category": "service",
+      "q": "(林口龜山以南)搬家服務預計什麼時候開始作業?"
+    },
+    {
+      "id": "97",
+      "category": "service",
+      "q": "(台中)搬家服務預計什麼時候開始作業?"
+    },
+    {
+      "id": "98",
+      "category": "service",
+      "q": "搬家服務從什麼時候開始計時計費"
+    }
+  ],
+  "messages": [
+    " 若自備包材是否可扣除費用？",
+    " (水桶式的和插水龍頭的)",
+    "*遇到拆裝/樓梯狹窄(會影響作業時間的因素)不要說一天能完成，需要拉出來討論*",
+    " 那整理師的費用的話是怎麼計算?"
+  ],
+  "stdout": "id\tcategory\tq\n1\tpacking\t創勝搬家／創勝包裝的完整服務有哪些？\n2\tpricing\t估價流程怎樣？我怎麼知道要多少錢？\n3\tbooking\t搬家／懶人搬家需要提前多久預約？\n4\tpricing\t服務總價是怎樣計算的？有哪些費用構成？\n5\tpricing\t每車單價/搬運費/打包費/歸位費是多少？\n6\tfloor\t樓層費的部分是怎麼計算\n7\tcleaning\t清潔的計費方式(計人計時)\n8\tpricing\t包裝耗材費怎麼算？\n9\tinsurance\t物品責任保險有嗎\n10\tpricing\t樓層費／樓梯／沒電梯的情況怎麼收費？\n11\tspecial\t特殊物品搬運怎樣算？\n12\tservice\t搬家當天我需準備什麼？\n13\torganizing\t歸位服務包含什麼？\n14\tpricing\t整理師服務是什麼？收費怎麼樣？\n15\tpacking\t垃圾清運／包材廢棄物怎麼處理？\n16\tgeneral\t新家與舊家之間若距離很遠會怎樣？\n17\tpacking\t是否可只搬運，不打包、不歸位？\n18\torganizing\t新的搬家結果後，如果我對歸位或擺放有不滿意，可以調整嗎？\n19\tpayment\t付款方式有哪些？\n20\tpayment\t信用卡可以付款嗎?\n21\tinsurance\t搬家完成後，物品有損壞或遺失怎麼辦？\n22\tpricing\t行政區、偏遠地區或跨縣市的搬運有加價嗎？\n23\tpricing\t車輛大小／噸數怎麼算？我怎麼知道幾車？\n24\tassembly\t是否提供家具拆裝服務？\n25\tstorage\t是否有倉儲服務？\n26\tspecial\t我有很多貴重藝術品／易碎品／鋼琴等要怎麼保護？\n27\tservice\t搬家日當天大概要花多少時間？會打擾到我的生活嗎？\n28\tappliance\t如果家電裡有食物或冰箱要搬怎麼處理？\n29\tappliance\t冰箱前24小時，是拔電靜置就好，還是門要打開呢？\n30\torganizing\t新家還沒全部整理好，我能不能先住進去？\n31\tbooking\t需要先付訂金嗎?如果我後來改期／取消怎麼辦？\n32\tspecial\t如果我有特殊要求／排除了標準流程怎麼辦？\n33\tpacking\t是否能參觀／看搬家團隊的包材或施工方式？\n34\tpacking\t環保/二手/一次性包材有差別嗎？\n35\tassembly\t有幫忙拆裝濾水機嗎 ?\n36\tpricing\t有搬運保險箱嗎?價格怎麼算?\n37\tpacking\t包材的部分是都怎麼打包?\n38\tassembly\t冷氣、免治馬桶有拆裝嗎?\n39\tcleaning\t是否提供家具或家電的清潔服務？\n40\tcleaning\t你們會進行搬家前後清掃嗎?具體流程是什麼?\n41\ttruck\t為什麼這次是用工時計算?上次是用車趟。\n42\tgeneral\t新家跟舊家都需要有人在嗎?\n43\tpricing\t搬運途中如果路上塞車，時間或費用會受影響嗎？\n44\tgeneral\t如果搬家日遇到颱風或大雨會怎麼處理？\n45\tliving\t植物、盆栽可以一併搬運嗎？\n46\tspecial\t寵物或水族箱(魚缸)搬運可協助嗎？\n47\tgeneral\t有沒有物品是你們不能搬的（例如危險品、易燃品）？\n48\tpricing\t包材是否可以自行提供？\n 若自備包材是否可扣除費用？\n49\torganizing\t歸位服務是否包含掛畫、安裝燈具、窗簾？\n50\tpacking\t搬家的所有流程是什?(打包+搬運+歸位的部分)\n51\tassembly\t飲水機會拆裝嗎?\n (水桶式的和插水龍頭的)\n52\tpricing\t估價何時出來/最晚何時可以估價完成\n53\tpricing\t估價何時出來/最晚何時可以估價完成\n54\tgeneral\t抽屜裡有東西能直接整個搬走嗎?我裡面東西可以不用拿出來吧?\n55\tpricing\t有機車檔車或腳踏車需要載你們也會搬嗎? 那費用又是怎麼算?\n56\tpacking\t倉儲服務會幫我打包+搬運,那我出倉的時候搬運費還要再收一次是嘛?(總共兩次搬運費)\n57\tassembly\t洗衣機、烘衣機你們會協助拆裝嗎?\n58\tpricing\t倉儲的優惠方案((運費折$500/車))\n59\tstorage\t你們的倉儲地址/倉儲地點哪裡?\n60\tgeneral\t搬運距離50公尺以上之社區中庭 是什麼意思\n61\tpayment\t發票會開的品項有哪些\n62\tgeneral\t公司搬遷需要提供什麼資料嗎?\n63\tpricing\t把電視從牆上拆下來，再裝回去都要費用嗎?\n64\ttruck\t貨車高度多少/多高呢?\n65\tservice\t要搬到國外，走國際搬家，請問有服務嗎?\n66\tgeneral\t你們會來場勘嗎?\n67\tpricing\t老客戶/舊客戶有優惠/打折嗎?\n68\tpricing\t工會有優惠嗎?\n69\tpricing\t北部(雙北/桃園)+南部(高雄/台南)搬遷低消\n70\tpricing\t北部(雙北/桃園) +南部(高雄)純整理/原地打包低消\n71\tpricing\t外縣市搬遷低消\n72\tpricing\t外縣市純整理/原地打包低消\n73\tpricing\t整理服務低消包含什麼?\n74\tgeneral\t可以協助購買XX（如衣架）嗎？\n75\tpacking\t可以跟你們買包材嗎?\n76\tpricing\t倉儲費用若不滿一個月，如何計價呢？\n77\tstorage\t倉儲費是月結嗎?什麼後結算?\n78\tgeneral\t可以幫我問一下物品在哪裡呢?找不到(找尋物品)\n79\tgeneral\t有推薦其他搬家公司嗎?\n80\tbooking\t預計執行月/日額滿想排候補\n81\tfloor\t一天可以搬完嗎?\n*遇到拆裝/樓梯狹窄(會影響作業時間的因素)不要說一天能完成，需要拉出來討論*\n82\tservice\t搬遷當天只有一個人\n83\tgeneral\t搬家前在新家先打掃 還是搬完後再打掃呢?\n84\ttruck\t可以跟車嗎?\n85\tpricing\t可以現場估價嗎?\n86\torganizing\t可以單純斷捨離嗎？\n87\torganizing\t請問整理師是女性嗎？\n88\tservice\t時間是現場作業完才算嗎？\n89\ttruck\t請問一車大概需要多少材料？\n90\tpricing\t假日費用會增加嗎？\n91\tpayment\t會開發票或收據給我嗎？\n92\tbooking\t如何確定我有預約成功?\n93\tfloor\t樓層費如何計算？\n94\tpricing\t我搬家的話(打包+搬運+歸位)\n 那整理師的費用的話是怎麼計算?\n95\tservice\t(林口龜山以北)搬家服務預計什麼時候開始作業?\n96\tservice\t(林口龜山以南)搬家服務預計什麼時候開始作業?\n97\tservice\t(台中)搬家服務預計什麼時候開始作業?\n98\tservice\t搬家服務從什麼時候開始計時計費\n",
+  "stderr": "",
+  "execution_time_ms": 1480
+}

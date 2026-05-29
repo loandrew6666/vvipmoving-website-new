@@ -1,0 +1,303 @@
+{
+  "query": "SELECT id, category, LEFT(question, 60) as question, imageUrl FROM faqs ORDER BY category, sortOrder LIMIT 50;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2p9oApjZCTPcMQH.283171aebfbb --database UpdR9BzkEvi6rSYbxgmsWm --execute SELECT id, category, LEFT(question, 60) as question, imageUrl FROM faqs ORDER BY category, sortOrder LIMIT 50;",
+  "rows": [
+    {
+      "id": "28",
+      "category": "appliance",
+      "question": "如果家電裡有食物或冰箱要搬怎麼處理？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "29",
+      "category": "appliance",
+      "question": "冰箱前24小時，是拔電靜置就好，還是門要打開呢？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "24",
+      "category": "assembly",
+      "question": "是否提供家具拆裝服務？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "35",
+      "category": "assembly",
+      "question": "有幫忙拆裝濾水機嗎 ?",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "38",
+      "category": "assembly",
+      "question": "冷氣、免治馬桶有拆裝嗎?",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "57",
+      "category": "assembly",
+      "question": "洗衣機、烘衣機你們會協助拆裝嗎?",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "3",
+      "category": "booking",
+      "question": "搬家／懶人搬家需要提前多久預約？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "31",
+      "category": "booking",
+      "question": "需要先付訂金嗎?如果我後來改期／取消怎麼辦？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "80",
+      "category": "booking",
+      "question": "預計執行月/日額滿想排候補",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "92",
+      "category": "booking",
+      "question": "如何確定我有預約成功?",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "7",
+      "category": "cleaning",
+      "question": "清潔的計費方式(計人計時)",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "39",
+      "category": "cleaning",
+      "question": "是否提供家具或家電的清潔服務？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "40",
+      "category": "cleaning",
+      "question": "你們會進行搬家前後清掃嗎?具體流程是什麼?",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "6",
+      "category": "floor",
+      "question": "樓層費的部分是怎麼計算",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "93",
+      "category": "floor",
+      "question": "樓層費如何計算？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "16",
+      "category": "general",
+      "question": "新家與舊家之間若距離很遠會怎樣？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "42",
+      "category": "general",
+      "question": "新家跟舊家都需要有人在嗎?",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "44",
+      "category": "general",
+      "question": "如果搬家日遇到颱風或大雨會怎麼處理？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "47",
+      "category": "general",
+      "question": "有沒有物品是你們不能搬的（例如危險品、易燃品）？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "54",
+      "category": "general",
+      "question": "抽屜裡有東西能直接整個搬走嗎?我裡面東西可以不用拿出來吧?",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "60",
+      "category": "general",
+      "question": "搬運距離50公尺以上之社區中庭 是什麼意思",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "62",
+      "category": "general",
+      "question": "公司搬遷需要提供什麼資料嗎?",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "66",
+      "category": "general",
+      "question": "你們會來場勘嗎?",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "74",
+      "category": "general",
+      "question": "可以協助購買XX（如衣架）嗎？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "78",
+      "category": "general",
+      "question": "可以幫我問一下物品在哪裡呢?找不到(找尋物品)",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "79",
+      "category": "general",
+      "question": "有推薦其他搬家公司嗎?",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "83",
+      "category": "general",
+      "question": "搬家前在新家先打掃 還是搬完後再打掃呢?",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "9",
+      "category": "insurance",
+      "question": "物品責任保險有嗎",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "21",
+      "category": "insurance",
+      "question": "搬家完成後，物品有損壞或遺失怎麼辦？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "45",
+      "category": "living",
+      "question": "植物、盆栽可以一併搬運嗎？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "13",
+      "category": "organizing",
+      "question": "歸位服務包含什麼？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "18",
+      "category": "organizing",
+      "question": "新的搬家結果後，如果我對歸位或擺放有不滿意，可以調整嗎？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "30",
+      "category": "organizing",
+      "question": "新家還沒全部整理好，我能不能先住進去？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "49",
+      "category": "organizing",
+      "question": "歸位服務是否包含掛畫、安裝燈具、窗簾？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "86",
+      "category": "organizing",
+      "question": "可以單純斷捨離嗎？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "87",
+      "category": "organizing",
+      "question": "請問整理師是女性嗎？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "1",
+      "category": "packing",
+      "question": "創勝搬家／創勝包裝的完整服務有哪些？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "15",
+      "category": "packing",
+      "question": "垃圾清運／包材廢棄物怎麼處理？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "17",
+      "category": "packing",
+      "question": "是否可只搬運，不打包、不歸位？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "33",
+      "category": "packing",
+      "question": "是否能參觀／看搬家團隊的包材或施工方式？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "34",
+      "category": "packing",
+      "question": "環保/二手/一次性包材有差別嗎？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "37",
+      "category": "packing",
+      "question": "包材的部分是都怎麼打包?",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "50",
+      "category": "packing",
+      "question": "搬家的所有流程是什?(打包+搬運+歸位的部分)",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "56",
+      "category": "packing",
+      "question": "倉儲服務會幫我打包+搬運,那我出倉的時候搬運費還要再收一次是嘛?(總共兩次搬運費)",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "75",
+      "category": "packing",
+      "question": "可以跟你們買包材嗎?",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "19",
+      "category": "payment",
+      "question": "付款方式有哪些？",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "20",
+      "category": "payment",
+      "question": "信用卡可以付款嗎?",
+      "imageUrl": "NULL"
+    },
+    {
+      "id": "61",
+      "category": "payment",
+      "question": "發票會開的品項有哪些",
+      "imageUrl": "NULL"
+    }
+  ],
+  "messages": [
+    "51\tassembly\t飲水機會拆裝嗎?",
+    " (水桶式的和插水龍頭的)\tNULL",
+    "81\tfloor\t一天可以搬完嗎?",
+    "*遇到拆裝/樓梯狹窄(會影響作業時間的因素)不要說一天能完成，需要拉出來討論*\tNULL"
+  ],
+  "stdout": "id\tcategory\tquestion\timageUrl\n28\tappliance\t如果家電裡有食物或冰箱要搬怎麼處理？\tNULL\n29\tappliance\t冰箱前24小時，是拔電靜置就好，還是門要打開呢？\tNULL\n24\tassembly\t是否提供家具拆裝服務？\tNULL\n35\tassembly\t有幫忙拆裝濾水機嗎 ?\tNULL\n38\tassembly\t冷氣、免治馬桶有拆裝嗎?\tNULL\n51\tassembly\t飲水機會拆裝嗎?\n (水桶式的和插水龍頭的)\tNULL\n57\tassembly\t洗衣機、烘衣機你們會協助拆裝嗎?\tNULL\n3\tbooking\t搬家／懶人搬家需要提前多久預約？\tNULL\n31\tbooking\t需要先付訂金嗎?如果我後來改期／取消怎麼辦？\tNULL\n80\tbooking\t預計執行月/日額滿想排候補\tNULL\n92\tbooking\t如何確定我有預約成功?\tNULL\n7\tcleaning\t清潔的計費方式(計人計時)\tNULL\n39\tcleaning\t是否提供家具或家電的清潔服務？\tNULL\n40\tcleaning\t你們會進行搬家前後清掃嗎?具體流程是什麼?\tNULL\n6\tfloor\t樓層費的部分是怎麼計算\tNULL\n81\tfloor\t一天可以搬完嗎?\n*遇到拆裝/樓梯狹窄(會影響作業時間的因素)不要說一天能完成，需要拉出來討論*\tNULL\n93\tfloor\t樓層費如何計算？\tNULL\n16\tgeneral\t新家與舊家之間若距離很遠會怎樣？\tNULL\n42\tgeneral\t新家跟舊家都需要有人在嗎?\tNULL\n44\tgeneral\t如果搬家日遇到颱風或大雨會怎麼處理？\tNULL\n47\tgeneral\t有沒有物品是你們不能搬的（例如危險品、易燃品）？\tNULL\n54\tgeneral\t抽屜裡有東西能直接整個搬走嗎?我裡面東西可以不用拿出來吧?\tNULL\n60\tgeneral\t搬運距離50公尺以上之社區中庭 是什麼意思\tNULL\n62\tgeneral\t公司搬遷需要提供什麼資料嗎?\tNULL\n66\tgeneral\t你們會來場勘嗎?\tNULL\n74\tgeneral\t可以協助購買XX（如衣架）嗎？\tNULL\n78\tgeneral\t可以幫我問一下物品在哪裡呢?找不到(找尋物品)\tNULL\n79\tgeneral\t有推薦其他搬家公司嗎?\tNULL\n83\tgeneral\t搬家前在新家先打掃 還是搬完後再打掃呢?\tNULL\n9\tinsurance\t物品責任保險有嗎\tNULL\n21\tinsurance\t搬家完成後，物品有損壞或遺失怎麼辦？\tNULL\n45\tliving\t植物、盆栽可以一併搬運嗎？\tNULL\n13\torganizing\t歸位服務包含什麼？\tNULL\n18\torganizing\t新的搬家結果後，如果我對歸位或擺放有不滿意，可以調整嗎？\tNULL\n30\torganizing\t新家還沒全部整理好，我能不能先住進去？\tNULL\n49\torganizing\t歸位服務是否包含掛畫、安裝燈具、窗簾？\tNULL\n86\torganizing\t可以單純斷捨離嗎？\tNULL\n87\torganizing\t請問整理師是女性嗎？\tNULL\n1\tpacking\t創勝搬家／創勝包裝的完整服務有哪些？\tNULL\n15\tpacking\t垃圾清運／包材廢棄物怎麼處理？\tNULL\n17\tpacking\t是否可只搬運，不打包、不歸位？\tNULL\n33\tpacking\t是否能參觀／看搬家團隊的包材或施工方式？\tNULL\n34\tpacking\t環保/二手/一次性包材有差別嗎？\tNULL\n37\tpacking\t包材的部分是都怎麼打包?\tNULL\n50\tpacking\t搬家的所有流程是什?(打包+搬運+歸位的部分)\tNULL\n56\tpacking\t倉儲服務會幫我打包+搬運,那我出倉的時候搬運費還要再收一次是嘛?(總共兩次搬運費)\tNULL\n75\tpacking\t可以跟你們買包材嗎?\tNULL\n19\tpayment\t付款方式有哪些？\tNULL\n20\tpayment\t信用卡可以付款嗎?\tNULL\n61\tpayment\t發票會開的品項有哪些\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 1505
+}
