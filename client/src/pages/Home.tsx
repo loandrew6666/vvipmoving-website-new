@@ -34,9 +34,14 @@ export default function HomePage() {
         <div className="block lg:hidden relative">
           <div className="relative h-[60vw] min-h-[240px] max-h-[340px] overflow-hidden">
             <img
-              src={IMAGES.heroBanner}
+              src={IMAGES.heroBannerMobile}
+              srcSet={`${IMAGES.heroBannerMobile} 720w, ${IMAGES.heroBanner} 1265w`}
+              sizes="(max-width: 1024px) 100vw, 1265px"
               alt="創勝包裝精緻搬家服務"
               className="w-full h-full object-cover"
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
               onError={(e) => {
                 (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80";
               }}
@@ -157,8 +162,13 @@ export default function HomePage() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl ring-1 ring-brand/20">
                 <img
                   src={IMAGES.heroBanner}
+                  srcSet={`${IMAGES.heroBannerMobile} 720w, ${IMAGES.heroBanner} 1265w`}
+                  sizes="(max-width: 1024px) 100vw, 1265px"
                   alt="創勝包裝精編搦家服務"
                   className="w-full h-[420px] object-cover"
+                  loading="eager"
+                  decoding="async"
+                  fetchPriority="high"
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80";
                   }}
@@ -236,6 +246,8 @@ export default function HomePage() {
                         src={service.image}
                         alt={service.title}
                         className="w-full h-full object-cover"
+                        loading="lazy"
+                        decoding="async"
                         onError={(e) => {
                           const el = e.target as HTMLImageElement;
                           el.style.display = "none";
@@ -273,6 +285,8 @@ export default function HomePage() {
                     src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                    decoding="async"
                     onError={(e) => {
                       const el = e.target as HTMLImageElement;
                       el.style.display = "none";
@@ -543,6 +557,8 @@ export default function HomePage() {
                       src={video.thumbnail}
                       alt={video.title}
                       className="w-full h-full object-cover"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all flex items-center justify-center">
                       <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">

@@ -5,11 +5,9 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+      content="width=device-width, initial-scale=1.0" />
     <title>創勝包裝 VVIP Moving</title>    
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;900&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://static.wixstatic.com" crossorigin />
     <meta name="description" content="創勝包裝 VVIP Moving - 台灣高端精緻搬家服務，提供台北、高雄免動手搬家、AI智能估價、到府打包歸位一條龍服務。" />
     <meta name="keywords" content="搬家,精緻搬家,台北搬家,高雄搬家,免動手搬家,創勝包裝,VVIP Moving,鋼琴搬運,精品搬運,企業搬遷" />
     <meta property="og:title" content="創勝包裝 VVIP Moving | 台灣高端精緻搬家" />
@@ -18,15 +16,31 @@
     <meta property="og:url" content="https://www.vvipmoving.com/" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="robots" content="index, follow" />
+    <link rel="preload" as="image" href="https://static.wixstatic.com/media/605461_a3edd8aaa432411fbda92fdb4bb63926~mv2.png/v1/fill/w_1265,h_848,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/605461_a3edd8aaa432411fbda92fdb4bb63926~mv2.png" />
   </head>
 
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script
-      defer
-      src="%VITE_ANALYTICS_ENDPOINT%/umami"
-      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
+    <script type="module">
+      const analyticsEndpoint = import.meta.env.VITE_ANALYTICS_ENDPOINT;
+      const analyticsWebsiteId = import.meta.env.VITE_ANALYTICS_WEBSITE_ID;
+      if (analyticsEndpoint && analyticsWebsiteId) {
+        const loadAnalytics = () => {
+          const script = document.createElement("script");
+          script.async = true;
+          script.src = `${analyticsEndpoint}/umami`;
+          script.dataset.websiteId = analyticsWebsiteId;
+          document.head.appendChild(script);
+        };
+
+        if ("requestIdleCallback" in window) {
+          window.requestIdleCallback(loadAnalytics, { timeout: 2000 });
+        } else {
+          window.addEventListener("load", loadAnalytics);
+        }
+      }
+    </script>
   </body>
 
 </html>

@@ -28,6 +28,8 @@ export const BRAND = {
 };
 
 // 原網站真實圖片 URL（wixstatic CDN）
+const getYouTubeThumbnail = (id: string) => `https://i.ytimg.com/vi/${id}/mqdefault.jpg`;
+
 export const IMAGES = {
   // Logo
   logo: "https://static.wixstatic.com/media/605461_4fe727db252b4929ae47ffeec2565398~mv2.png/v1/fill/w_130,h_129,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%E5%89%B5%E5%8B%9D-14.png",
@@ -35,6 +37,7 @@ export const IMAGES = {
 
   // Hero / Banner 圖片
   heroBanner: "https://static.wixstatic.com/media/605461_a3edd8aaa432411fbda92fdb4bb63926~mv2.png/v1/fill/w_1265,h_848,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/605461_a3edd8aaa432411fbda92fdb4bb63926~mv2.png",
+  heroBannerMobile: "https://static.wixstatic.com/media/605461_a3edd8aaa432411fbda92fdb4bb63926~mv2.png/v1/fill/w_900,h_604,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/605461_a3edd8aaa432411fbda92fdb4bb63926~mv2.png",
   aboutBanner: "https://static.wixstatic.com/media/605461_6e476d02ac7e474297de717b12c4efe9~mv2.jpg/v1/fill/w_1265,h_380,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/605461_6e476d02ac7e474297de717b12c4efe9~mv2.jpg",
   serviceTypeBanner: "https://static.wixstatic.com/media/605461_2d71f74e54524d55b235796a8adb0e69~mv2.jpg/v1/fill/w_1265,h_380,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/605461_2d71f74e54524d55b235796a8adb0e69~mv2.jpg",
   newsBanner: "https://static.wixstatic.com/media/605461_b7df1c6d8bfb44a6a21691fad4f8f5d2~mv2.jpg/v1/fill/w_1265,h_381,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/605461_b7df1c6d8bfb44a6a21691fad4f8f5d2~mv2.jpg",
@@ -88,28 +91,28 @@ export const VIDEOS = [
     title: "《一日系列第一百九十九集》搬家實習生報到！打包、裝箱、搬運個10車沒問題吧～蛤",
     channel: "木曜4超玩",
     duration: "54:39",
-    thumbnail: "https://i.ytimg.com/vi/kaDhS1_pb88/maxresdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/kaDhS1_pb88/mqdefault.jpg",
   },
   {
     id: "b3NX14nSCFI",
     title: "我搬家了！拍支Vlog記錄｜完全免動手搬家體驗！創勝搬家｜波特王好帥",
     channel: "波特王",
     duration: "10:13",
-    thumbnail: "https://i.ytimg.com/vi/b3NX14nSCFI/maxresdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/b3NX14nSCFI/mqdefault.jpg",
   },
   {
     id: "blfi0QxVL6c",
     title: "入駐淡水老街！我的店搬進了五層樓透天厝！100萬元掰掰【搬家全記錄】｜金魚腦",
     channel: "金魚腦Goldfish Brain",
     duration: "27:56",
-    thumbnail: "https://img.youtube.com/vi/blfi0QxVL6c/hqdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/blfi0QxVL6c/mqdefault.jpg",
   },
   {
     id: "Gatx4D3MOrM",
     title: "千人訂閱Q&A｜百萬PRO解答｜唯一愛馬仕等級搬家",
     channel: "創勝包裝",
     duration: "05:56",
-    thumbnail: "https://img.youtube.com/vi/Gatx4D3MOrM/hqdefault.jpg",
+    thumbnail: "https://i.ytimg.com/vi/Gatx4D3MOrM/mqdefault.jpg",
   },
   {
     id: "2hgcW_j-73M",
