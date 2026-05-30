@@ -8,11 +8,6 @@
         "distDir": "dist/public"
       }
     }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/dist/public/$1"
-    }
+
   ]
 }
